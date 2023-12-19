@@ -3,10 +3,15 @@ Create a bioactivity prediction app using molecular descriptors (PADEL) and supe
 
 modules must be used consequently, in order:
 
-bioprediction_part1: search data for a specific target on Chembl database and make a dataframe, collect IC50 and SMILES values and calculate molecular descriptors by PADEL. Set descriptors as x and pIC50 as y. ** before closing the colab page (part1) you must save on your computer (or in google drive) dataset_with_padel_pIC50.csv file **.
+bioActivity_part1: search data for a specific target on Chembl database and make a dataframe, collect IC50 and SMILES values and calculate molecular descriptors by PADEL. Set descriptors as x and pIC50 as y. ** before closing the colab page (part1) you must save on your computer (or in google drive) dataset_with_padel_pIC50.csv file **.
 
-bioprediction_part2: ** upload dataset_with_padel_pIC50.csv file **. Compare various ML models and find the best one to utilize for our project.
+bioActivity_part2: ** upload dataset_with_padel_pIC50.csv file **. Compare various ML models and find the best one to utilize for our project.
 
-bioprediction_part3: Perform linear regression with RandomForest regressor, generate the model (pkl) and predict IC50 of new molecules directly via colab worksheet.
+bioActivity_part3: Calculates descriptors from the genertaed smiles notation
 
-bioprediction_part4: This module allows you to upload pickle object (the model previously generated) and SMILES file (every dimension), read them and perform predictions. It makes possible to obtain results from every target protein model choosen by you!
+bioActivity_part4: Perform linear regression with RandomForest regressor, generate the model (pkl) and predict IC50 of new molecules directly via colab worksheet.
+
+bioActivity_part5: compares the performance of different models using lazy predict library.
+
+bioActivity_part6:It's basically a web app built that allows you to upload pickle object (the model previously generated) and SMILES file (every dimension), read them and perform predictions. It makes possible to obtain results from every target protein model choosen by you!
+ 
